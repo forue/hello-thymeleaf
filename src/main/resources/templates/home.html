@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+</head>
+<body>
+    <h1 th:text="${title}">页面模板</h1>
+    <ul>
+        <li th:each="name:${names}" th:text="${name}">动态生成人名</li>
+    </ul>
+</body>
+</html>
